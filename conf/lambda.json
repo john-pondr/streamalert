@@ -22,7 +22,7 @@
       }
     },
     "schedule_expression": "rate(1 minute)",
-    "source_bucket": "PREFIX_GOES_HERE.streamalert.source",
+    "source_bucket": "pondurance.streamalert.source",
     "source_current_hash": "<auto_generated>",
     "source_object_key": "<auto_generated>",
     "timeout": 60,
@@ -51,7 +51,7 @@
         "threshold": 0
       }
     },
-    "source_bucket": "PREFIX_GOES_HERE.streamalert.source",
+    "source_bucket": "pondurance.streamalert.source",
     "source_current_hash": "<auto_generated>",
     "source_object_key": "<auto_generated>",
     "timeout": 60,
@@ -62,19 +62,19 @@
   },
   "athena_partition_refresh_config": {
     "buckets": {
-      "PREFIX_GOES_HERE.streamalerts": "alerts"
+      "pondurance.streamalerts": "alerts"
     },
     "current_version": "$LATEST",
     "enable_metrics": false,
     "handler": "stream_alert.athena_partition_refresh.main.handler",
     "log_level": "info",
-    "source_bucket": "PREFIX_GOES_HERE.streamalert.source",
+    "source_bucket": "pondurance.streamalert.source",
     "source_current_hash": "<auto_generated>",
     "source_object_key": "<auto_generated>"
   },
   "rule_processor_config": {
     "handler": "stream_alert.rule_processor.main.handler",
-    "source_bucket": "PREFIX_GOES_HERE.streamalert.source",
+    "source_bucket": "pondurance.streamalert.source",
     "source_current_hash": "<auto_generated>",
     "source_object_key": "<auto_generated>",
     "third_party_libraries": [
@@ -83,7 +83,7 @@
   },
   "stream_alert_apps_config": {
     "handler": "app_integrations.main.handler",
-    "source_bucket": "PREFIX_GOES_HERE.streamalert.source",
+    "source_bucket": "pondurance.streamalert.source",
     "source_current_hash": "<auto_generated>",
     "source_object_key": "<auto_generated>"
   }
